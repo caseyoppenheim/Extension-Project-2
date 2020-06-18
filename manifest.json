@@ -1,0 +1,13 @@
+{
+    "name": "Casey's Extension",
+    "version": "1",
+    "description": "Hello World!",
+    "permissions": ["activeTab"],
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "casey_project.png",
+        "default_title": "My Extension"
+    }
+    
+}
