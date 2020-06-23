@@ -11,7 +11,7 @@ function onBeforeRequest(data){
     console.log(urlFixed);
     var blockedList = "facebook.com";
     if(urlFixed.contains(blockedList)){
-        //block
+        return webRequest.BlockingResponse;
     }
 
     //for block list: look at string mdn on google and look at the methods for the string object

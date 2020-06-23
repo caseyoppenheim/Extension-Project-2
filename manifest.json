@@ -3,7 +3,7 @@
     "name": "Casey's Extension",
     "version": "1.0.0",
     "description": "Hello World!",
-    "permissions": ["webRequest" , "http://*/*", "https://*/*"],
+    "permissions": ["webRequest" , "http://*/*", "https://*/*", "webRequestBlocking"],
     "background":{
         "scripts": [
             "background.js"
