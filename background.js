@@ -2,14 +2,10 @@ function onBeforeRequest(data){
     //perhaps put 'data' in parameter
     console.log("top of on before request method");
     console.log(data.url);
-    //need to return something
-    //this is where blocking goes and also figuring out whether something needs to be blocked
-
-    //rework all of this!
-    const urlNotFixed = data.url;
-    urlNotFixed.toLowerCase();
-    const urlFixed = urlNotFixed;
-    if(urlFixed.includes(blockedList)){
+   
+    
+    
+    if((data.url).includes(blockedList) || (data.url).includes("googletagservices.com") || (data.url).includes("amazon-adsystem.com")){
         console.log("inside if statement");
         //okay so it's entering the if statement correctly but then nothing happens and the code continues to run
         return {cancel : true};
